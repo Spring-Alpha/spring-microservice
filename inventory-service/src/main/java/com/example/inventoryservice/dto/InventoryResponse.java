@@ -5,14 +5,14 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record InventoryResponse(
         String skuCode,
-        boolean isInStock,
+        Boolean isInStock,
         Integer quantity
 ) {
     public InventoryResponse(String skuCode, boolean isInStock) {
-        this(skuCode, isInStock, 0);
+        this(skuCode, isInStock, null);
     }
 
     public InventoryResponse(String skuCode, Integer quantity) {
-        this(skuCode, false, quantity);
+        this(skuCode, null, quantity);
     }
 }

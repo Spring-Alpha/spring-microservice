@@ -12,11 +12,6 @@
 	<name>product-service</name>
 	<description>Microservice learning (Product Service)</description>
 
-	<properties>
-		<maven.compiler.source>22</maven.compiler.source>
-		<maven.compiler.target>22</maven.compiler.target>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
